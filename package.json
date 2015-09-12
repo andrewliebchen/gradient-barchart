@@ -6,7 +6,7 @@
   "private": true,
   "src": "src",
   "test": "test",
-  "dist": "dist",
+  "dist": "example",
   "mainInput": "GradientBarchartsApp",
   "mainOutput": "main",
   "dependencies": {
