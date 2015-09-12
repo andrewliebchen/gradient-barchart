@@ -29,7 +29,16 @@ const DATA = [
 
 const BarChart = React.createClass({
   propTypes: {
-    data: React.PropTypes.array
+    data: React.PropTypes.array,
+    width: React.PropTypes.number,
+    height: React.PropTypes.number
+  },
+
+  getDefaultProps() {
+    return {
+      width: 'auto',
+      height: 'auto'
+    };
   },
 
   render() {
@@ -46,12 +55,14 @@ const BarChart = React.createClass({
       runningTotal += element.value;
     });
 
-    let gradientStyle = {
-      backgroundImage: `linear-gradient(to bottom, ${colorStops.join(', ')})`
+    let style = {
+      backgroundImage: `linear-gradient(${this.props.width > this.props.height ? 'to right' : 'to bottom'}, ${colorStops.join(', ')})`,
+      width: this.props.width,
+      height: this.props.height
     };
 
     return (
-      <div className="bar-chart" style={gradientStyle}/>
+      <div className="bar-chart" style={style}/>
     );
   }
 });
@@ -60,7 +71,7 @@ const App = React.createClass({
   render() {
     return (
       <div className="main">
-        <BarChart data={DATA}/>
+        <BarChart data={DATA} width={100} height={500}/>
       </div>
     );
   }
