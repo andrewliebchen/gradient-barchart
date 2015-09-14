@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react/addons';
-import _ from 'lodash';
+import BarChart from '../barChart';
 
 // CSS
 require('normalize.css');
@@ -27,51 +27,13 @@ const DATA = [
   {name: "No opinion", value: 2, color: 'thistle'},
 ];
 
-const BarChart = React.createClass({
-  propTypes: {
-    data: React.PropTypes.array,
-    width: React.PropTypes.number,
-    height: React.PropTypes.number
-  },
-
-  getDefaultProps() {
-    return {
-      width: 'auto',
-      height: 'auto'
-    };
-  },
-
-  render() {
-    let total = 0;
-    let colorStops = [];
-    let runningTotal = 0;
-
-    _.map(this.props.data, function(element) {
-      total += element.value;
-    });
-
-    _.map(this.props.data, function(element, i) {
-      colorStops.push(`${element.color} ${(runningTotal / total) * 100}%`, `${element.color} ${((element.value + runningTotal)/ total) * 100}%`);
-      runningTotal += element.value;
-    });
-
-    let style = {
-      backgroundImage: `linear-gradient(${this.props.width > this.props.height ? 'to right' : 'to bottom'}, ${colorStops.join(', ')})`,
-      width: this.props.width,
-      height: this.props.height
-    };
-
-    return (
-      <div className="bar-chart" style={style}/>
-    );
-  }
-});
-
 const App = React.createClass({
   render() {
     return (
       <div className="main">
-        <BarChart data={DATA} width={100} height={500}/>
+        <h1>Republican candidates for president poll results</h1>
+        <h3>September 11, 2015</h3>
+        <BarChart data={DATA} width={500} height={100}/>
       </div>
     );
   }

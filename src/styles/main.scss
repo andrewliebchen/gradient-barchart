@@ -1,6 +1,21 @@
-.bar-chart {
-  position: absolute;
-  top: 50%;
+html,
+body {
+  background-color: #f7f7f7;
+  color: #444;
+  font-family: "san francisco text", "helvetica neue", helvetica, arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.main {
   left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
   transform: translate3d(-50%, -50%, 0);
+
+  .bar-chart {
+    border-radius: 3px;
+    margin: 3em auto;
+  }
 }
