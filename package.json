@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Simple bar charts with React and CSS linear-gradient",
   "main": "src/barChart.js",
+  "src": "src",
+  "dist": "example",
+  "mainInput": "App",
+  "mainOutput": "main",
   "dependencies" : {
     "react": "^0.13.3"
   },

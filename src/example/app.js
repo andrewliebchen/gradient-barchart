@@ -34,6 +34,7 @@ const App = React.createClass({
         <h1>Republican candidates for president poll results</h1>
         <h3>September 11, 2015</h3>
         <BarChart data={DATA} width={500} height={100}/>
+        <small>Get it on <a href="https://www.npmjs.com/package/gradient-barchart">NPM</a>. Follow me on <a href="https://twitter.com/andrewliebchen">Twitter</a>.</small>
       </div>
     );
   }
