@@ -2,7 +2,7 @@
   "name": "gradient-barchart",
   "version": "1.0.1",
   "description": "Simple bar charts with React and CSS linear-gradient",
-  "repository": "https://github.com/andrewliebchen/gradient-barcharts",
+  "repository": "https://github.com/andrewliebchen/gradient-barchart",
   "private": false,
   "main": "src/barChart.js",
   "src": "src",
@@ -11,7 +11,7 @@
   "mainOutput": "main",
   "author": "Andrew Liebchen <andrewliebchen@gmail.com>",
   "license": "MIT",
-  "homepage": "http://andrewliebchen.github.io/gradient-barcharts/example",
+  "homepage": "http://andrewliebchen.github.io/gradient-barchart/example",
   "dependencies": {
     "react": "0.13.x"
   },
