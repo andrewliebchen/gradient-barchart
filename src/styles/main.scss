@@ -7,6 +7,18 @@ body {
   line-height: 1.2;
 }
 
+@keyframes bar-chart {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
 .main {
   left: 50%;
   position: absolute;
@@ -15,7 +27,10 @@ body {
   transform: translate3d(-50%, -50%, 0);
 
   .bar-chart {
+    animation: bar-chart 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550) 0.3s forwards;
     border-radius: 3px;
     margin: 3em auto;
+    opacity: 0;
+    transform-origin: top left;
   }
 }
