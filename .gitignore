@@ -30,3 +30,4 @@ $RECYCLE.BIN/
 node_modules/
 .tmp
 /src/main.js
+npm-debug.log
