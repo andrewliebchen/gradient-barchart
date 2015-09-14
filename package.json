@@ -1,6 +1,6 @@
 {
-  "name": "gradient-barcharts",
-  "version": "0.0.0",
+  "name": "gradient-barchart",
+  "version": "1.0.0",
   "description": "Simple bar charts with React and CSS linear-gradient",
   "repository": "https://github.com/andrewliebchen/gradient-barcharts",
   "private": false,

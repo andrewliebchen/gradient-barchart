@@ -2,7 +2,7 @@
 
 A ReactJS component for simple bar charts drawn with CSS `linear-gradient`.
 
-[DEMO!](http://andrewliebchen.github.io/gradient-barcharts/example/)
+[DEMO!](http://andrewliebchen.github.io/gradient-barchart/example/)
 
 ## Use it!
 
